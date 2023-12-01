@@ -1,9 +1,9 @@
 import Directory from "../../components/directory/directory.component";
 
-const Home = () => {
-  const categories = require("../../categories.json");
+import CATEGORIES from "../../categories.json";
 
-  return <Directory categories={categories} />;
+const Home = () => {
+  return <Directory categories={CATEGORIES} />;
 };
 
 export default Home;
