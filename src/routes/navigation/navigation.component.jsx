@@ -18,7 +18,7 @@ const Navigation = () => {
   const isCartOpen = useSelector(selectIsCartOpen);
 
   return (
-    <header>
+    <>
       <nav className="navigation">
         <Link className="logo-container" to="/">
           <CrwnLogo className="logo" />
@@ -41,7 +41,7 @@ const Navigation = () => {
         {isCartOpen && <CartDropdown />}
       </nav>
       <Outlet />
-    </header>
+    </>
   );
 };
 
